@@ -1,0 +1,101 @@
+/* =======================
+   Estilos Generales
+   ======================= */
+
+.info-contacto {
+    background-color: #f0f0f0;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+
+/* Responsive para tablets */
+@media (max-width: 900px) {
+    .info-contacto {
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+    }
+}
+
+/* Responsive para móviles */
+@media (max-width: 600px) {
+    body, html {
+        width: 100vw;
+        overflow-x: hidden;
+    }
+    .info-contacto {
+        padding: 0.5rem 0 1rem 0;
+        width: 100vw;
+        box-sizing: border-box;
+    }
+    form, section {
+        width: 100%;
+        min-width: 0;
+    }
+    fieldset {
+        width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0.5rem 0.5rem 1rem 0.5rem;
+    }
+    label, input, select, textarea {
+        font-size: 1em;
+        word-break: break-word;
+    }
+    .botones-container {
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: stretch;
+    }
+    
+}
+
+/* =======================
+   Fieldsets y formularios
+   ======================= */
+
+h2{
+    text-align: center;
+    margin: 1.5rem 0;
+    color: #000000;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='tel'],
+textarea,
+select {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.2rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+/* =======================
+   Textarea ajuste responsive
+   ======================= */
+textarea {
+    resize: vertical;
+    min-height: 80px;
+    font-family: 'Roboto', sans-serif;
+}
+
+button {
+    padding: 0.5rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.botones-container {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1rem;
+}

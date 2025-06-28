@@ -1,0 +1,44 @@
+
+
+# Archivos y carpetas del sistema
+.DS_Store
+Thumbs.db
+
+# Archivos temporales de editores
+*.asp
+*.cer
+*.csr
+*.jsp
+*.php
+*.rss
+*.wasm
+*.wat
+*.xhtml
+
+
+
+# Archivos temporales de editores
+*.swp
+*.swo
+*.tmp
+*.bak
+*.log
+
+# Archivos de configuración de VSCode
+.vscode/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# Local History for Visual Studio Code
+.history/
+
+
+.idea/
+*.zip
+*.tar.gz
+
+# End of https://mrkandreev.name/snippets/gitignore-generator/#Web,VisualStudioCode

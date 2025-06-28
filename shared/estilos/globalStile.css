@@ -1,0 +1,249 @@
+/* =======================
+   Estilos Generales
+   ======================= */
+
+html{
+    scroll-behavior: smooth;
+    
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #030000; 
+    background-color: rgb(255, 255, 255);
+    padding-bottom: 0px;
+    
+}
+header {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+
+/* =======================
+   Encabezado y título
+   ======================= */
+
+
+.titulo {
+    background: linear-gradient(10deg, #2c3e50, var(--color-header));
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+h1 {
+    text-align: center;
+    margin: 1.5rem 0;
+    color: #ffffff;
+}
+
+/* =======================
+   Navbar
+   ======================= */
+/* Lista opciones ordenada*/
+.menu-principal {
+    background-color: var(--color-nav);
+    padding: 1rem;
+    margin-bottom: 0.01rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.menu-principal ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    gap: 2rem;
+}
+
+.menu-principal a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: rgb(255, 255, 255) 0.3s;
+    
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.menu-principal a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+nav {
+    text-align: center; 
+    font-size: 1.5em; 
+}
+
+/* =======================
+   Botones usados en contacto 
+   ======================= */
+button {
+    background-color: #5E68F7;
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    cursor: pointer;
+    margin: 0.5rem 0.5rem 0 0;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    font-family: 'Roboto', sans-serif;
+}
+
+button:hover {
+    background-color: #4a57d1;
+}
+
+/* Contenedor para los botones */
+.botones-container {
+    margin-top: 20px;
+    display: flex;
+    gap: 0.8rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+
+/* =======================
+   Fieldsets y formularios usados en 
+   contacto y configuracion
+   ======================= */
+
+fieldset {
+    border: 2px solid #5E68F7;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem 0;
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+legend {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+label {
+    display: block;
+    margin: 0.5rem 0 0.2rem 0;
+}
+
+
+
+/* =======================
+   Estilos para el botón "Chat" 
+   ======================= */
+.chat-button {
+    visibility: visible;
+    opacity: 1; 
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    display: flex;
+    align-items: center;
+    z-index: 100;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    background: var(--color-chat-button);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 4px 6px var(--sombra-media);
+
+    
+    transition: opacity 1s, visibility 1s;
+}
+
+.chat-button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.1);
+}
+
+.chat-button.pulsating {
+    animation: pulsate  0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both; /* Animación pulsate al hacer clic */
+    opacity: 0;
+    visibility: hidden;
+}
+
+.chat-button.regreso{
+    animation: regresar 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) reverse both;
+    opacity: 1;
+    visibility: visible; /* Asegura que el botón sea visible */
+}
+
+/* Animación pulsate */
+@keyframes pulsate {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+      }
+      100% {
+        transform: scale(0);
+        opacity: 1;
+      }
+}
+
+@keyframes regresar {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+      }
+      100% {
+        transform: scale(0);
+        opacity: 1;
+      }
+}
+
+
+
+/* Parte footer final*/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    text-align: center;
+    background-color: var(--color-footer);
+}
+
+nav {
+    background-color: var(--color-nav);
+}
+
+
+
+/* =======================
+   Alertas
+   ======================= */
+#alert-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1055;
+  min-width: 300px;
+  max-width: 90vw;
+  pointer-events: none; /* Para que no tape otros elementos */
+}
+#alert-container .alert {
+  pointer-events: auto; /* Para que el botón de cerrar funcione */
+}

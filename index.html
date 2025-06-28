@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Revista digital con noticias sobre tecnología, juegos, tendencias y más.">
+    <title>Lab1</title>
+    <link rel="stylesheet" href="./shared/estilos/var.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="estilosIndex.css">
+    <link rel="stylesheet" href="./shared/estilos/globalStile.css">
+    
+    <script src="./shared/js/javascripGlobal.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+    <header class="titulo" >
+        <h1 id="main-title">Mi revista Digital</h1> 
+        <p class="subtitulo">Una revista sobre <em>diversos temas</em></p>
+    </header>
+
+   
+
+
+    <nav class="navbar navbar-expand-lg menu-principal">
+        <div class="container-fluid justify-content-center">
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="mainNavbar">
+                <ul class="navbar-nav  gap-4">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Inicio">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#trends">Tendencias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./views/config/configuracion.html">Configuración</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./views/contact/contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+    <!-- Contenedor para alertas -->
+    <div id="alert-container"></div>
+
+    <main>
+        <section id="trends" class="sectiontrends">
+            <h2><strong>Tendencias</strong></h2>
+        </section>
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-8">
+                    <section id="ultimas_Noticias" class="sectionNoticias">
+                        <h2><strong>Últimas noticias</strong></h2>
+                        
+                        <article>
+                            <h3>
+                                <strong>¿Por qué los juegos modernos a menudo no están optimizados?</strong>
+                            </h3>
+                            
+                            <figure>
+                                <img src="https://i.ytimg.com/vi/TtrbvnWvCU4/maxresdefault.jpg" alt="Portada sobre optimización de videojuegos" width="300" height="300">
+                                <figcaption><strong>Imagen de Portada</strong></figcaption>
+                            </figure>
+
+                            <p>
+                                En los últimos años, muchos jugadores han notado que varios juegos modernos parecen no estar tan bien optimizados como se esperaba. Esto se debe a que los desarrolladores enfrentan <strong>presiones enormes</strong> para lanzar títulos rápidamente debido a la competencia intensa en la industria. Las entregas frecuentes y los ciclos cortos de desarrollo a veces <em>sacrifican la optimización profunda</em>, llevando a problemas de rendimiento en equipos menos potentes.
+                            </p>
+                            <p>
+                                Otro factor importante es el uso creciente de <strong>múltiples capas de abstracciones</strong> y <em>motores de juego complejos</em>. Estas abstracciones facilitan el desarrollo rápido y la portabilidad a distintas plataformas, pero pueden generar <i>overhead</i> o carga extra que afectan la eficiencia del juego en tiempo real.
+                            </p>
+                            <p>
+                                Además, la creciente <strong>complejidad gráfica</strong> y de mecánicas de juegos exige más recursos, lo que puede afectar dispositivos con hardware limitado. La variedad de configuraciones en PC hace casi imposible garantizar un <em>rendimiento óptimo</em> para todos. Por eso, a menudo los juegos salen con <strong>requerimientos muy altos</strong> y poca flexibilidad en opciones de configuración.
+                            </p>
+                        </article>
+
+                        <article>
+                            <h3><strong>El impacto de las actualizaciones en el rendimiento de los juegos</strong></h3>
+                            
+                            <figure>
+                                <img src="https://www.muycomputer.com/wp-content/uploads/2021/07/Cyberpunk-2077-fallos-videojuegos.jpg" alt="imagen de ciberpunk" width="300" height="300">
+                                <figcaption><strong>Imagen Portada</strong></figcaption>
+                            </figure>
+
+                            <p>
+                                A menudo, los juegos modernos son lanzados con una serie de <em>problemas de rendimiento</em> que pueden frustrar a los jugadores. Sin embargo, muchos desarrolladores están <strong>comprometidos</strong> a mejorar la experiencia del usuario a través de actualizaciones y parches. Estas <i>actualizaciones</i> pueden corregir errores, mejorar la optimización y, en algunos casos, incluso añadir contenido nuevo.
+                            </p>
+                            <p>
+                                Por ejemplo, títulos como <i>Cyberpunk 2077</i> y <i>No Man's Sky</i> han pasado por transformaciones significativas gracias a parches que han mejorado su <strong>rendimiento</strong> y <em>jugabilidad</em>. Los desarrolladores han escuchado las críticas de la comunidad y han trabajado arduamente para ofrecer una experiencia más fluida y satisfactoria.
+                            </p>
+                            <p>
+                                Sin embargo, es importante recordar que cada actualización puede traer consigo <strong>nuevos problemas</strong>. Por lo tanto, los jugadores deben estar atentos a las <em>notas de los parches</em> y las reseñas para entender cómo cada actualización puede afectar su experiencia de juego.
+                            </p>
+                            <p>
+                                De esto y mucho más habla el youtuber <strong>BaityBait</strong> en este video
+                            </p>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/CzhDfb4xrTY?si=XBEND2gDjMP3pGDt" title="YouTube video BaityBait" style="border: none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </article>
+                    </section>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <aside class="aside">
+                        <div class="definiciones">
+                            <h2><strong>API y SEO: Definiciones</strong></h2>
+                            <dl>
+                                <dt class="dt1"><strong>API</strong></dt>
+                                <dd class="dd1">
+                                    <blockquote>
+                                        <em>"Podemos entender la <strong>API</strong> como un código que indica a las aplicaciones, cómo pueden 
+                                        mantener una comunicación entre sí. Estas reglas permiten que los distintos
+                                        programas mantengan interacciones."</em>
+                                        <cite><a href="https://definicion.de/api/">wikipedia</a></cite>
+                                    </blockquote>
+                                </dd>
+
+                                <dt class="dt2"><strong>SEO</strong></dt>
+                                <dd class="dd2">
+                                    <blockquote>
+                                        <em>"SEO es una sigla que procede de la expresión inglesa <i>Search Engine Optimization</i>.
+                                        Se trata de la técnica que consiste en optimizar un sitio web para que alcance
+                                        el mejor posicionamiento posible en los buscadores de Internet."</em>
+                                        <cite><a href="https://definicion.de/seo/">wikipedia</a></cite>
+                                    </blockquote>
+                                </dd>
+                            </dl>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <button class="chat-button" onclick="animacionChat()">
+        <img src="./assets/imagenes/iconchat.png" alt="Icono de mensaje" class="chat-icon" width="20" height="20">
+        <strong>Chat</strong>
+    </button>
+
+    
+    
+    <footer>
+        <h4><strong>Información de contacto</strong></h4>
+        <address>
+            <span>
+                <em>email@ejemplo.com</em>
+            </span>
+            <div>
+                <span><a href="contacto.html"><strong>Contacto</strong></a></span>
+            </div>
+        </address>
+    </footer>
+   
+    
+
+</body>
+</html>
